@@ -55,6 +55,9 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .logo {
@@ -182,6 +185,7 @@ body {
 
   display: block;
   border-radius: 4px;
+  border-color: transparent;
   padding: 10px 32px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -375,8 +379,18 @@ body {
   padding-bottom: 94px;
 }
 
+.portfolio h1 {
+  display: none;
+}
+
 .filters {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.filters .filters-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-btn {
@@ -392,6 +406,7 @@ body {
 
   padding: 6px 22px;
   border-radius: 4px;
+  border-color: transparent;
 }
 
 .portfolio-btn:hover,
@@ -401,7 +416,9 @@ body {
 }
 
 .portfolio-card {
-  padding: 20px 24px;
+  padding: 24px 20px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-title {
@@ -419,4 +436,27 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--second-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  background-color: var(--third-background-color);
+}
+
+.portfolio-list .portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-list .portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-list .portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
