@@ -80,8 +80,34 @@ body {
 
 /* nav */
 
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list {
+  display: flex;
+  margin-left: 93px;
+
   color: var(--first-color);
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-contacts .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-list-item,
@@ -157,6 +183,8 @@ body {
   display: block;
   border-radius: 4px;
   padding: 10px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
@@ -165,10 +193,23 @@ body {
 }
 
 /* feauters */
+
+.feauters h2 {
+  display: none;
+}
+
 .feauters {
   background-color: var(--first-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.feauters-list {
+  display: flex;
+}
+
+.feauters-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feauters-title {
@@ -198,6 +239,16 @@ body {
 .about-title {
   color: var(--first-color);
   margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-img {
@@ -222,9 +273,21 @@ body {
 }
 
 .team-title {
+  margin-right: auto;
+  margin-left: auto;
+
   color: var(--first-color);
 
   margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-img {
+  display: block;
 }
 
 .team-text {

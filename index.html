@@ -24,22 +24,28 @@
     <!--Шапка-->
     <header class="header">
       <!--nav-->
-      <div class="container">
-        <nav>
+      <div class="header-content container">
+        <nav class="main-nav">
           <a href="./index.html" class="logo link"><span class="logo-web">Web</span>Studio</a>
           <ul class="nav-list list">
-            <li><a href="./index.html" class="nav-list-item link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="nav-list-item link">Портфолио</a></li>
-            <li><a href="" class="nav-list-item link">Контакты</a></li>
+            <li class="item">
+              <a href="./index.html" class="nav-list-item link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="nav-list-item link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="nav-list-item link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="nav-contacts list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="nav-contacts-list link"
               >info@devstudio.com</a
             >
           </li>
-          <li><a href="tel:+380961111111" class="nav-contacts-list link">+38 096 111 11 11</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="nav-contacts-list link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -55,26 +61,26 @@
       <section class="feauters">
         <div class="container">
           <h2>Наші переваги</h2>
-          <ul class="list">
-            <li>
+          <ul class="feauters-list list">
+            <li class="item">
               <h3 class="feauters-title">Внимание к деталям</h3>
               <p class="feauters-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feauters-title">Пунктуальность</h3>
               <p class="feauters-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feauters-title">Планирование</h3>
               <p class="feauters-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="feauters-title">Современные технологии</h3>
               <p class="feauters-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -87,14 +93,14 @@
       <section class="about">
         <div class="container">
           <h2 class="about-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="about-list list">
+            <li class="item">
               <img src="./images/programming.jpg" alt="programming" class="about-img" width="370" />
             </li>
-            <li>
+            <li class="item">
               <img src="./images/connection.jpg" alt="connection" class="about-img" width="370" />
             </li>
-            <li>
+            <li class="item">
               <img src="./images/design.jpg" alt="design" class="about-img" width="370" />
             </li>
           </ul>
@@ -104,30 +110,40 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
-            <li>
-              <img src="./images/product-d1.jpg" alt="product-designer" width="270" />
+          <ul class="team-list list">
+            <li class="item">
+              <img
+                src="./images/product-d1.jpg"
+                alt="product-designer"
+                class="team-img"
+                width="270"
+              />
               <div class="team-text">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="team-proffession">Product Designer</p>
               </div>
             </li>
-            <li>
-              <img src="./images/developer1.jpg" alt="frontend-developer" width="270" />
+            <li class="item">
+              <img
+                src="./images/developer1.jpg"
+                alt="frontend-developer"
+                class="team-img"
+                width="270"
+              />
               <div class="team-text">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="team-proffession">Frontend Developer</p>
               </div>
             </li>
-            <li>
-              <img src="./images/marketing1.jpg" alt="marketing" width="270" />
+            <li class="item">
+              <img src="./images/marketing1.jpg" alt="marketing" class="team-img" width="270" />
               <div class="team-text">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="team-proffession">Marketing</p>
               </div>
             </li>
-            <li>
-              <img src="./images/ui-d1.jpg" alt="ui-designer" width="270" />
+            <li class="item">
+              <img src="./images/ui-d1.jpg" alt="ui-designer" class="team-img" width="270" />
               <div class="team-text">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="team-proffession">UI Designer</p>
