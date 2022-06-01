@@ -196,10 +196,10 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero-btn:hover,
+/* .hero-btn:hover,
 .hero-btn:focus {
   color: #188ce8;
-}
+} */
 
 /* ---section ---*/
 
@@ -244,6 +244,10 @@ img {
 }
 
 /* about */
+
+.about {
+  padding-top: 0;
+}
 
 .about-title {
   color: var(--first-color);
